@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --pink: #e83e8c;
+  --red: #f83d50;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --white: #fff;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  transition: 0.8s;
+  font-weight: 800;
+  font-style: italic;
+}
+p {
+  font-size: 20px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent .container {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.parent .card {
+  width: 580px;
+  height: 600px;
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  outline: #0f0f0f28 1px solid;
+  border-radius: 15px;
+}
+
+.parent .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.right {
+  padding: 9px 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: var(--red);
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px !important;
+  font-size: 22px;
+}
+
+.right {
+  border: 1px solid var(--red);
+  z-index: 1;
+  color: white;
+}
+
+.right:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.right:hover {
+  color: rgb(0, 0, 0);
+}
+
+.right:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.right:active {
+  top: 2px;
+}
+h1:hover {
+  color: var(--red);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+/* -------Media Query---------- */
+@media (max-width: 1300px) {
+  .parent {
+    height: auto;
+  }
+}
+/*------------------ New Line ----------------------*/
+@media (max-width: 700) {
+  .parent .card {
+    width: 450px;
+  }
+}
+/* -----New Max-width in Media Query-------- */
+@media (max-width: 450px) {
+  .parent .card {
+    width: 300px;
+    height: 400px;
+  }
+} /* -----End Media Query---------- */

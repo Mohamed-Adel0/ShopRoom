@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstraaap.mina.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="js/main.js"></script>
+    <title>Project</title>
+</head>
+<body>
+    <div id="carouselExampleAutoplaying" class="overflow-hidden carousel scroll slide mood" data-bs-ride="carousel position-relative">
+        <div class="dark-mood">
+          <button id="dark-mood" class=""><i class="fa-regular fa-moon"></i></button>
+          <button id="dark-mood-light" class="hide"><i class="fa-regular fa-sun"></i></button>
+        </div>
+        <nav class="row navbar navbar-expand-lg bg-body-tertiary position-absolute">
+            <div class="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-around" id="nav">
+              <img  src="picture/logo_light.png" alt="">
+              
+              <button class="navbar-toggler bg-light menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div style="width: 60%;" class="collapse navbar-collapse flex-grow-0 justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav bg-sm-warning  align-items-md-center align-items-sm-center mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active singal-products" aria-current="page" href="#">Singal Product</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active products" aria-current="page" href="#">Products</a>
+                  </li>
+                                   
+                  <li class="nav-item">
+                    <a class="nav-link active about" aria-current="page" href="#">About</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a id="contact-us" class="nav-link active contact" aria-current="page" href="#">Contact Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a id="register" class="nav-link active contact" aria-current="page" href="#">Register</a>
+                  </li>
+                </ul>
+                <div id="btn-text" class="icon  h-100">
+                    <button id="user"><i class="fa-regular fa-user"></i></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        <div class="carousel-inner h-100 ">
+
+          <div class="carousel-item position-relative ">
+            <img src="picture/banner10.jpg" class="d-block w-100 imgs" alt="...">
+            <div class="xbg position-absolute">
+               <div class="text">
+                <h5><span>STARTING $90.00</span></h5>
+                <h1>Unique Furniture Style</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                <a id="laugh" class="bottom" href="#">Shop Now</a>
+               </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="picture/banner11.jpg" class="d-block w-100 imgs" alt="...">
+            <div class="xbg col-md-12 col-sm-12 position-absolute">
+                <div class="text col-md-12 col-sm-12">
+                <h5>Get up to 50% off Today Only!</h5>
+                <h1>Quality Furniture</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                <a id="laugh" class="bottom" href="#">Shop Now</a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="picture/banner12.jpg" class="d-block w-100 position-relative imgs" alt="...">
+            <div class="xbg position-absolute">
+                <div class="text">
+                <h5>Taking your Viewing Experience to Next Level</h5>
+                <h1 class="size">Taking your Viewing Experience to Next Level</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                <a id="laugh" class="bottom" href="#">Shop Now</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn p-4 btn-secondary" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn btn-secondary p-4" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- ~~~~~~~~~~~End-Frest-Prodcut~~~~~~~~~~~~ -->
+    <!-- New Line -->
+    <!-- ~~~~~~~~~~~New--Parent-For-Change-Picture------->
+      <div id="singal-products" class="parent mood">
+        
+        <div class="container">
+          <div class="parent-img">
+            <img id="parent-img" src="picture/banner12.jpg" alt="Error">
+          </div>
+          <div class="cards-img">
+            <div class="text">
+              <h3>Select Your Favourite Picture</h3>
+            </div>  
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_blog_img1.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_blog_img2.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_blog_img3.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/banner10.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/banner11.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/shop_banner1.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/banner12.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img1.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img2.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img3.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img4.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img5.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img6.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img7.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/furniture_img8.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/menu_banner22.jpg" alt="">
+            </div>
+            <!-- New Line -->
+            <div class="card">
+              <img class="child-img" src="picture/ChangePicture/menu_banner33.jpg" alt="">
+            </div>
+            <!-- New Line -->
+          
+           
+          </div>
+        </div>
+      </div>
+    <!-- ~~~~~~~~~~~End--Parent-For-Change-Picture------->
+    <!-- New Line -->
+    <!-- ~~~~~~~~~~~Three--Parent-------->
+    <div id="about" class="three-parent mood">
+      <div class="container">
+        <div class="card">
+          <h3>Big Sale Deal</h3>
+          <h1><span>Sale 40% Off</span></h1>
+          <div class="row">
+            <div class="cards">
+              <h2 id="day">00</h2>
+              <h4>Days</h4>
+            </div>
+            <div class="cards">
+              <h2 id="Hours">00</h2>
+              <h4>Hours</h4>
+            </div>
+            <div class="cards">
+              <h2 id="minutes">00</h2>
+              <h4>Minutes</h4>
+            </div>
+            <div class="cards">
+              <h2 id="seconds">00</h2>
+              <h4 id="demo">Seconds</h4>
+            </div>
+          </div>
+          <a class="right laugh" href="#">Show Now</a>
+          <form action="">
+            <input type="email" name=""  placeholder="Enter Your Email">
+          <a class="right" href="#">SUBSCRIBE</a>
+          </form>
+          <p>To receive latest offers and discounts from the shop.</p>
+        </div>
+        <div class="card">
+          <img src="picture/ChangePicture/furniture_img3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~End--Parent-------->
+    <!-- New Line -->
+    <!-- ~~~~~~~~~~~Four--Parent-------->
+    <div class="four-parent mood">
+      <div id="containers" class="containers">
+     
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~End--Parent-------->
+    <!-- New Line -->
+
+    <!-- -----------Here for login----------- -->
+    <div id="sgin" class="parent-login mood">
+      <div class="container-login">
+          <h1 id="loginup">Login Form</h1>
+          <form  id="log" action="">
+              <input id="email" type="email" placeholder="Email Addresss">
+              <h4 id="error-email" class="hide">Invalid</h4>
+              <input id="password" type="password" name="" placeholder="Passowrd">
+
+              <!-- <a href="#">Forgot Passowrd?!</a> -->
+              <button id="click-login" >Login</button>
+          </form>
+         
+         <div class="paragraph">
+          <p style="opacity: 1;">Not a member? <a id="loginx" class="singup" href="">Signup Now</a></p>
+         </div>
+      </div>
+  </div>
+    <!-- -----------end The for login----------- -->
+
+    <!-- ~~~~~~~~~~~Here For Contact-------->
+    <div id="contact" class="five-parent">
+      <div id="back-Text" class="backtext">
+        
+      </div>
+      <div class="container">
+        <div class="close">
+          <button id="close" style="background-color: transparent; color: #fff; font-size: 30px; padding: 0 20px;"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <h2 style="color: #fff;">Contact Us</h2>
+        <form action="">
+          <input id="text-contact" type="text" placeholder="Enter your Name">
+          <input id="email-contact" type="email" placeholder="Enter a valid email address">
+          <textarea name="" id="textarea" cols="45" rows="2" placeholder="Enter your Message"></textarea>
+          <button id="contactbuttom" class="btn btn-danger">Submit</button>
+        </form>
+
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~End For Contact-------->
+
+    <!-- New Line -->
+
+    <!-- ~~~~~~~~~~~Here For Footer-------->
+    <div class="seven-parent">
+      <div class="container">
+        <div class="box-card">
+          <div class="card">
+            <h4 class="tt">ABOUT AGENCY</h4>
+            <p class="tt">If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
+            <p></p>
+          </div>
+          <!-- New Line -->
+          <div class="card">
+            <h4 class="tt">INFORMATION</h4>
+            <p class="tt">Term Of Service Privacy Policy Return policy Your Account Suppliers</p>
+            <div class="search">
+              <input type="email" placeholder="Email Address">
+              <button class="btn btn-danger"><i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+  
+          </div>
+          <!-- New Line -->
+          <div class="card">
+            <h4 class="tt">INSTAFEED</h4>
+            <div class="box-img">
+              <img src="picture/ChangePicture/furniture_img1.jpg" alt="">
+              <img src="picture/ChangePicture/furniture_img2.jpg" alt="">
+              <img src="picture/ChangePicture/furniture_img3.jpg"  alt="">
+              <img src="picture/ChangePicture/furniture_img4.jpg"  alt="">
+              <img src="picture/ChangePicture/furniture_img5.jpg"  alt="">
+              <img src="picture/ChangePicture/furniture_img6.jpg"  alt="">
+              <img src="picture/ChangePicture/furniture_img7.jpg" alt="">
+              <img src="picture/ChangePicture/furniture_img8.jpg"  alt="">
+            </div>
+            <p></p>
+          </div>
+          <!-- New Line -->
+        </div>
+        <div class="footer">
+            <h4 class="tt">Copyright ©2023 All rights reserved | This template is made with  by <span>Mohamed-adel</span></h4>
+            <div class="icon">
+              <button><a href="https://www.facebook.com/profile.php?id=100012706116123"><i class="fa-brands fa-facebook-f"></i></a></button>
+              <button><a href="https://github.com/Mohamed-Adel97"><i class="fa-brands fa-github"></i></a></button>
+              <button><a href="https://www.linkedin.com/in/mohamed-adel-226611286/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~End For Footer-------->
+
+
+     <!-- click to scroll top -->
+     <div id="to-top" class="scroll-Top">
+      <button class="to-top btn btn-outline-danger"><i class="fa-solid fa-arrow-up"></i></button>
+     </div>
+     <!-- end click scroll top -->
+     <div class="btn-login"></div>
+     <!-- New Line -->
+
+     <!-- -------------Loading background----------- -->
+     <div id="loading" class="loading">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+     </div>
+</body>
+</html>
