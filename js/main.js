@@ -48,7 +48,7 @@ for (let i = 0; i < childPicture.length; i++) {
 // ------------------------New Line------------------------
 
 // Timer For Sale
-let countDownDate = new Date("Sep 30, 2023 15:37:25").getTime();
+let countDownDate = new Date("Sep 30, 2024 15:37:25").getTime();
 
 let x = setInterval(function () {
     let now = new Date().getTime();
