@@ -83,10 +83,6 @@ function countdown() {
     document.getElementById("Hours").innerHTML = hours
     document.getElementById("minutes").innerHTML = mins
     document.getElementById("seconds").innerHTML = seconds
-    daysEl.innerHTML = days;
-    hoursEl.innerHTML = formatTime(hours);
-    minsEl.innerHTML = formatTime(mins);
-    secondsEl.innerHTML = formatTime(seconds);
 }
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
