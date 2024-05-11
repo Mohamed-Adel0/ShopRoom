@@ -67,6 +67,11 @@ for (let i = 0; i < childPicture.length; i++) {
 //     }
 // }, 1000);
 
+const daysEl = document.getElementById("day");
+const hoursEl = document.getElementById("Hours");
+const minsEl = document.getElementById("minutes");
+const secondsEl = document.getElementById("seconds");
+
 const newYears = "15 Jan 2026";
 
 function countdown() {
@@ -79,11 +84,13 @@ function countdown() {
     const hours = Math.floor(totalSeconds / 3600) % 24;
     const mins = Math.floor(totalSeconds / 60) % 60;
     const seconds = Math.floor(totalSeconds) % 60;
-    document.getElementById("day").innerHTML = days
-    document.getElementById("Hours").innerHTML = hours
-    document.getElementById("minutes").innerHTML = mins
-    document.getElementById("seconds").innerHTML = seconds
+
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = formatTime(hours);
+    minsEl.innerHTML = formatTime(mins);
+    secondsEl.innerHTML = formatTime(seconds);
 }
+
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
