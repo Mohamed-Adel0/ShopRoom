@@ -48,25 +48,54 @@ for (let i = 0; i < childPicture.length; i++) {
 // ------------------------New Line------------------------
 
 // Timer For Sale
-let countDownDate = new Date("Sep 30, 2024 15:37:25").getTime();
+// let countDownDate = new Date("Sep 30, 2024 15:37:25").getTime();
 
-let x = setInterval(function () {
-    let now = new Date().getTime();
-    let distance = countDownDate - now;
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor(distance) % 60;
-        // Math.floor((distance % (1000 * 60)) / 1000);
+// let x = setInterval(function () {
+//     let now = new Date().getTime();
+//     let distance = countDownDate - now;
+//     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     document.getElementById("day").innerHTML = days
+//     document.getElementById("Hours").innerHTML = hours
+//     document.getElementById("minutes").innerHTML = minutes
+//     document.getElementById("seconds").innerHTML = seconds
+//         + minutes + seconds + "s ";
+//     if (distance < 0) {
+//         clearInterval(x);
+//     }
+// }, 1000);
+
+const newYears = "15 Jan 2026";
+
+function countdown() {
+    const newYearsDate = new Date(newYears);
+    const currentDate = new Date();
+
+    const totalSeconds = (newYearsDate - currentDate) / 1000;
+
+    const days = Math.floor(totalSeconds / 3600 / 24);
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+    const mins = Math.floor(totalSeconds / 60) % 60;
+    const seconds = Math.floor(totalSeconds) % 60;
     document.getElementById("day").innerHTML = days
     document.getElementById("Hours").innerHTML = hours
-    document.getElementById("minutes").innerHTML = minutes
+    document.getElementById("minutes").innerHTML = mins
     document.getElementById("seconds").innerHTML = seconds
-        + minutes + seconds + "s ";
-    if (distance < 0) {
-        clearInterval(x);
-    }
-}, 1000);
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = formatTime(hours);
+    minsEl.innerHTML = formatTime(mins);
+    secondsEl.innerHTML = formatTime(seconds);
+}
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+}
+
+// initial call
+countdown();
+
+setInterval(countdown, 1000);
 // End Timer
 
 // ------------------------New Line------------------------
